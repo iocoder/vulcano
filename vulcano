@@ -23,5 +23,5 @@ fucker = AngelcoDriver.new()
 fucker.open
 fucker.login(username, password)
 fucker.enumerate(keywords, maxpages)
-#fucker.apply(cover)
+fucker.apply(cover)
 

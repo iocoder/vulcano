@@ -1,5 +1,4 @@
 require 'capybara/dsl'
-require 'capybara-webkit'
 require 'capybara'
 require 'json'
 
@@ -14,10 +13,6 @@ class AngelcoDriver
         # initialize Capybara
         Capybara.default_driver = :selenium
         Capybara.javascript_driver = :selenium
-        Capybara::Webkit.configure do |config|
-          config.allow_url(@url)
-          config.block_unknown_urls
-        end
     end  
 
     def open
@@ -113,11 +108,8 @@ class AngelcoDriver
                 page.all('button').each do |btn|
                     if btn['innerHTML'].include? "Appl"
                         check = btn.click
-                        if check == 'ok'
-                            puts "-> applied for #{job_url}"
-                            sleep(1)
-                            break
-                        end
+                        puts "-> applied for #{job_url}"
+                        sleep(2)
                     end
                 end
             end
