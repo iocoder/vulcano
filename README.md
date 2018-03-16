@@ -23,7 +23,7 @@ $ gem install capybara
 ## Configuration
 
 You need to setup a YAML configuration file before you run the script.
-Refer to 'example.yml' for an example configuration file.
+Refer to 'example.yml' for a sample configuration file.
 
 ## Running
 
@@ -35,5 +35,11 @@ $ ./vulcano <path-to-config-file.yml>
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under GNU GPL v3 - see the [LICENSE](LICENSE) file for details.
+
+## Etymology
+
+I chose the name of the project while I was listening to some italian music of
+the recent few years: [https://www.youtube.com/watch?v=pkN_APXy8TE](Francesca Michielin - Vulcano).
+You can imagine this script as a vulcanic explosion against the arrogance of capitalists.
 
