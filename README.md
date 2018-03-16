@@ -44,5 +44,6 @@ the recent few years. You can imagine this script as a vulcanic explosion agains
 the arrogance of capitalists.
 
 Francesca Michielin - Vulcano:
+
 [![Francesca Michielin - Vulcano](http://img.youtube.com/vi/pkN_APXy8TE/0.jpg)](http://www.youtube.com/watch?v=pkN_APXy8TE)
 
