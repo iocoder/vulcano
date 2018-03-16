@@ -1,0 +1,14 @@
+driver:    angelco
+username:  type_your_username
+password:  type_your_password_here
+keywords:  Software Engineer | Developer
+maxpages:  10
+cover: >
+    Dear Hiring Manager,
+
+    Hello, my name is Mostafa Abdelaziz. Nice to meet you!
+
+    I am applying for this job because it looks like it's a fit for my skills. I'd really love the opportunity to interview at %{company_name} for the open %{job_title} position.
+
+    Thanks again. You can reach me at +1-778-788-0657 or my email address (iocoder@aol.com) if you'd like to chat.
+
