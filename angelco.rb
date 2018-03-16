@@ -88,29 +88,28 @@ class AngelcoDriver
     def apply(cover)
         # apply come vulcano in tutte le cose tutte le cose
         @job_links.each do |job_url|
+            # open job page            
             visit job_url
-            if not page.has_css?('.fontello-ok')
-                # get job information
-                heading = page.first("h1.u-colorGray3").text.split(' at ')
-                # substitue variable names in the cover letter
-                sub_cover = cover %  {job_title: heading.first, company_name: heading.last}
-                # click on apply button
-                page.find('.c-button.c-button--blue.js-interested-button', match: :first).click
-                # wait until job application form is rendered
-                sleep(1)
-                # insert cover letter
-                page.all('textarea').each do |txt|
-                    if txt['maxlength'] == "1000"
-                        txt.send_keys(sub_cover)
-                    end
+            # get job information
+            heading = page.first("h1.u-colorGray3").text.split(' at ')
+            # substitue variable names in the cover letter
+            sub_cover = cover %  {job_title: heading.first, company_name: heading.last}
+            # click on apply button
+            page.find('.c-button.c-button--blue.js-interested-button', match: :first).click
+            # wait until job application form is rendered
+            sleep(2)
+            # insert cover letter
+            page.all('textarea').each do |txt|
+                if txt['maxlength'] == "1000"
+                    txt.send_keys(sub_cover)
                 end
-                # apply for the job
-                page.all('button').each do |btn|
-                    if btn['innerHTML'].include? "Appl"
-                        check = btn.click
-                        puts "-> applied for #{job_url}"
-                        sleep(2)
-                    end
+            end
+            # apply for the job
+            page.all('button').each do |btn|
+                if btn['innerHTML'].include? "Send"
+                    check = btn.click
+                    puts "-> applied for #{job_url}"
+                    sleep(2)
                 end
             end
         end
