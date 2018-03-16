@@ -8,31 +8,29 @@ This Ruby script is basically for angel.co website, however, I am planning
 to add driver classes for other websites (like indeed.ca). Feel free
 to send me a pull request if you would like to add something!
 
-## Credit
-
 The angel.co driver source code is based on a rails program developed
 by jmopr: https://github.com/jmopr/job-hunter
 
-### Prerequisites
+## Prerequisites
 
 Before you run the script, you need to install ruby if it is not installed.
 Install the following gems:
 
 ```
-    $ gem install capybara
+$ gem install capybara
 ```
 
-### Configuration
+## Configuration
 
 You need to setup a YAML configuration file before you run the script.
 Refer to 'example.yml' for an example configuration file.
 
-### Running
+## Running
 
 You only need to pass your configuration file name as an argument:
 
 ```
-    $ ./vulcano <path-to-config-file.yml>
+$ ./vulcano <path-to-config-file.yml>
 ```
 
 ## License
