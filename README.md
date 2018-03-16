@@ -40,6 +40,8 @@ This project is licensed under GNU GPL v3 - see the [LICENSE](LICENSE) file for 
 ## Etymology
 
 I chose the name of the project while I was listening to some italian music of
-the recent few years: [https://www.youtube.com/watch?v=pkN_APXy8TE](Francesca Michielin - Vulcano).
-You can imagine this script as a vulcanic explosion against the arrogance of capitalists.
+the recent few years. You can imagine this script as a vulcanic explosion against 
+the arrogance of capitalists.
+
+[![Francesca Michielin - Vulcano](http://img.youtube.com/vi/pkN_APXy8TE/0.jpg)](http://www.youtube.com/watch?v=pkN_APXy8TE)
 
